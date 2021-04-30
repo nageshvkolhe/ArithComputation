@@ -14,3 +14,6 @@ echo "s:$s"
 
 q=$(( c + a / b ))
 echo "q:$q"
+
+t=$(( a % b + c ))
+echo "t:$t"
