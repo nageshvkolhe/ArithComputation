@@ -32,3 +32,17 @@ arrayName=( $p $q $r $s )
 t=$(( a % b + c ))
 echo "t:$t"
 echo ${arrayName[@]}
+
+
+for ((i = 0; i<4; i++))
+do
+
+    for((j = 0; j<4-i-1; j++))
+    do
+
+        if [ ${arrayName[j]} -gt ${arrayName[$((j+1))]} ]
+	@@ -43,4 +44,4 @@ do
+done
+
+echo "Array in sorted order :"
+echo ${[@]}
