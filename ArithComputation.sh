@@ -1,4 +1,8 @@
 #!/bin/bash
+
+
+ declear -A arrayName
+
 echo "Please enter your first number: "
 read a
 echo "Enter second number: "
@@ -21,3 +25,10 @@ echo "t:$t"
 
 t=$(( a % b + c ))
 echo "t:$t"
+
+
+arrayName=( $p $q $r $s )
+
+t=$(( a % b + c ))
+echo "t:$t"
+echo ${arrayName[@]}
