@@ -5,3 +5,6 @@ echo "Enter second number: "
 read b
 echo "Enter third number: "
 read c
+
+p=$(( a + b * c ))
+echo "p:$p"
